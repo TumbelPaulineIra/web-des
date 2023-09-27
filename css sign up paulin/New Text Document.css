@@ -1,0 +1,42 @@
+body {
+    background-color: #f5a0af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cute-frame {
+    background-color: #fff;
+    border: 5px solid #fbb8b8;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+h1 {
+    color: #cf2167;
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.cute-frame::before {
+    content: "";
+    background-image: url('cute-pattern.png'); /* Ganti dengan path gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    z-index: -1;
+    border-radius: 15px;
+}
