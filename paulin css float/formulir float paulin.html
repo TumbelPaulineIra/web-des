@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="css float.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Pendaftaran</h2>
+        <form="centerbody {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-color: #fff;
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {;}
+        
+        .form-group {
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        label {
+            float: left;
+            width: 40%;
+            text-align: right;
+            padding-right: 10px;
+            line-height: 30px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            float: left;
+            width: 60%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        input[type="submit"] {
+            clear: both;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        >
+
+        <h3> <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="konfirmasi-password">Konfirmasi Password:</label>
+                <input type="password" id="konfirmasi-password" name="konfirmasi-password">
+            </div>
+            <div class="form-group">
+                <label for="tanggal-lahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggal-lahir" name="tanggal-lahir">
+            </div>
+            <div class="form-group">
+                <label for="jenis-kelamin">Jenis Kelamin:</label>
+                <select id="jenis-kelamin" name="jenis-kelamin">
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Daftar">
+            </div>
+        </h3>
+        </form>
+    </div>
+</body>
+</html>
